@@ -19,12 +19,12 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <div className="relative flex flex-col w-full h-full items-center justify-center gap-3 overflow-hidden">
+    <div className=" flex flex-col w-full h-full items-center justify-center gap-3 overflow-hidden">
       <div className="font-bold text-3xl mb-6 w-full self-start">
         Featured Projects
       </div>
       <div>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           {(showDetails === "" || showDetails === "luxebet") && (
             <div>
               <ProjectPreview
@@ -43,7 +43,7 @@ export default function FeaturedProjects() {
             <div>
               <ProjectPreview
                 projectKey="applyai"
-                title={"Apply.ai (Currently in development)"}
+                title={"Apply.ai"}
                 techStack={["TypeScript, React, Python, OpenAI, RestAPI"]}
                 img={applyaiImg}
                 allImg={[applyaiImg, applyaiImg2]}

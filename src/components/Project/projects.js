@@ -1,5 +1,7 @@
 import luxebetImg from "../../assets/luxebet/luxebet-1.png";
 import luxebetImg2 from "../../assets/luxebet/luxebet-2.png";
+import luxebetImg3 from "../../assets/luxebet/luxebet-3.png";
+import luxebetImg4 from "../../assets/luxebet/luxebet-4.png";
 
 import applyaiImg from "../../assets/applyai/applyai-1.png";
 import applyaiImg2 from "../../assets/applyai/applyai-2.png";
@@ -15,7 +17,7 @@ export const projects = {
     img: luxebetImg,
     siteUrl: "https://luxebet-casino.vercel.app/auth",
     githubUrl: "https://github.com/jacksonkalmbach/luxebet-casino",
-    allImg: [luxebetImg2, luxebetImg],
+    allImg: [luxebetImg2, luxebetImg, luxebetImg3, luxebetImg4],
   },
   applyai: {
     title: "Apply.ai",

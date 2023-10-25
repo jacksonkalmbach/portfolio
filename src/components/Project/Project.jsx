@@ -7,6 +7,7 @@ import { projects } from "./projects";
 import { useNavigate, useParams } from "react-router-dom";
 import ChevronLeft from "../icons/ChevronLeft";
 import ChevronRight from "../icons/ChevronRight";
+import ArrowLeft from "../icons/ArrowLeft";
 
 export default function Project() {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ export default function Project() {
   return (
     <div className="w-full h-full overflow-y-auto flex flex-col p-8">
       <div className="cursor-pointer flex gap-2" onClick={() => navigate("/")}>
+        <ArrowLeft />
         Back
       </div>
       <div className="flex flex-col justify-center items-center p-6">
@@ -45,7 +47,7 @@ export default function Project() {
           >
             <ChevronLeft />
           </div>
-          <div className="w-3/5">
+          <div className="w-full md:w-3/5 rounded-xl overflow-hidden">
             <img
               className="h-full object-cover"
               src={allImg[imgIdx]}

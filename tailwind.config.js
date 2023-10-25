@@ -7,6 +7,9 @@ module.exports = {
         primaryBg: "#f7f7f7",
       },
     },
+    fontFamily: {
+      montserrat: ["'Montserrat", "sans-serif"],
+    },
   },
   variants: {},
   plugins: [],

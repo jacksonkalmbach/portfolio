@@ -65,21 +65,26 @@ export default function Main() {
       }`}
     >
       <div
-        className="md:hidden fixed left-10 top-10"
-        onClick={() => setShowMobileNav(true)}
+        className={`md:hidden fixed top-0 w-full transition-all duration-300 ease-in-out ${
+          !showMobileNav ? "h-16" : "h-1/5"
+        } flex justify-start items-center bg-white`}
       >
-        <HamburgerIcon />
-      </div>
-      <div
-        className={`md:hidden w-3/5 h-screen bg-primaryBg ${
-          showMobileNav ? "left-0" : "-left-3/5"
-        }`}
-      >
-        <MobileNav />
+        <div className="" onClick={() => setShowMobileNav(!showMobileNav)}>
+          {!showMobileNav && (
+            <div className="p-6">
+              <HamburgerIcon />
+            </div>
+          )}
+        </div>
+        <div className="w-full h-full">
+          {showMobileNav && (
+            <MobileNav handleShowMobileNav={setShowMobileNav} />
+          )}
+        </div>
       </div>
       <NavBar section={section} handleNavigationClick={handleNavigationClick} />
       <div
-        className="w-full md:w-4/5 min-h-screen flex flex-col items-center overflow-y-auto overflow-x-hidden"
+        className="w-full gap-2 md:w-4/5 min-h-screen flex flex-col items-center overflow-y-auto overflow-x-hidden"
         ref={mainRef}
       >
         <div
@@ -87,8 +92,10 @@ export default function Main() {
           className="min-h-screen w-full flex flex-col justify-center items-center"
           ref={sectionRefs.Home}
         >
-          <h1 className="text-3xl md:text-6xl font-bold">JACKSON KALMBACH</h1>
-          <h1 className="text-xl md:text-4xl font-bold">Software Engineer</h1>
+          <h1 className="text-3xl md:text-6xl mb-2 font-montserrat font-bold">
+            JACKSON KALMBACH
+          </h1>
+          <h1 className="text-xl md:text-4xl font-thin">Software Engineer</h1>
         </div>
         <div
           id="Experience"

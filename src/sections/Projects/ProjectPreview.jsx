@@ -31,12 +31,12 @@ export default function ProjectPreview({
           {title}
         </h2>
         <div
-          className="cursor-pointer active:scale-95"
+          className="cursor-pointer w-1/3 active:scale-95"
           onClick={() => {
             navigate(`/${projectKey}`);
           }}
         >
-          <p>Details</p>
+          <p className="font-thin w-1/2">View Details</p>
         </div>
       </div>
       <div

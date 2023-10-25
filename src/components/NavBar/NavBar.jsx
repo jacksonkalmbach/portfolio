@@ -8,12 +8,12 @@ export default function NavBar({ section, handleNavigationClick }) {
       </p>
 
       <p
-        className={`pr-4 cursor-pointer hover:font-bold transition-all duration-200 ${
+        className={`pr-4 cursor-pointer font-monserrat hover:font-bold transition-all duration-200 ${
           section === "Home" && "font-bold border-r-2 border-black"
         }`}
         onClick={() => handleNavigationClick("Home")}
       >
-        Home
+        HOME
       </p>
       <p
         className={`pr-4 cursor-pointer hover:font-bold transition-all duration-200 ${
@@ -21,7 +21,7 @@ export default function NavBar({ section, handleNavigationClick }) {
         }`}
         onClick={() => handleNavigationClick("Experience")}
       >
-        Experience
+        EXPERIENCE
       </p>
       <p
         className={`pr-4 cursor-pointer hover:font-bold transition-all duration-200 ${
@@ -29,7 +29,7 @@ export default function NavBar({ section, handleNavigationClick }) {
         }`}
         onClick={() => handleNavigationClick("Projects")}
       >
-        Projects
+        PROJECTS
       </p>
     </div>
   );
