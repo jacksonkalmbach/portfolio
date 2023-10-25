@@ -3,9 +3,12 @@ import EmailIcon from "../icons/EmailIcon";
 import GithubIcon from "../icons/GithubIcon";
 import LinkedInIcon from "../icons/LinkedInIcon";
 
-export default function ContactFloater() {
+export default function ContactFloater({ section }) {
   return (
-    <div className="flex flex-col gap-2 w-fit h-fit">
+    <div
+      className={`flex flex-col
+       gap-2 w-fit h-fit transform-all duration-300`}
+    >
       <a
         href="mailto:jacksonrkalmbach@gmail.com"
         target="_blank"

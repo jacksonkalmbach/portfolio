@@ -10,7 +10,7 @@ export default function Experience({
   skills,
 }) {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 w-full">
       <div className="flex gap-2">
         <h2 className="font-bold">{company}</h2>
         <p>{position}</p>
