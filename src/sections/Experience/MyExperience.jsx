@@ -12,6 +12,7 @@ export default function MyExperience() {
           <Experience {...job} />
         ))}
       </div>
+
     </div>
   );
 }

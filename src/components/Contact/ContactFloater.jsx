@@ -12,7 +12,7 @@ export default function ContactFloater() {
         rel="noopener noreferrer"
       >
         <EmailIcon
-          classname="w-8 h-8 cursor-pointer hover:scale-125"
+          classname="w-8 h-8 cursor-pointer hover:scale-125 transition-all duration-200"
           color="#000000"
         />
       </a>
@@ -23,7 +23,7 @@ export default function ContactFloater() {
         rel="noopener noreferrer"
       >
         <LinkedInIcon
-          classname="w-8 h-8 cursor-pointer hover:scale-125"
+          classname="w-8 h-8 cursor-pointer hover:scale-125 transition-all duration-200"
           color="#000000"
         />
       </a>
@@ -34,7 +34,7 @@ export default function ContactFloater() {
         rel="noopener noreferrer"
       >
         <GithubIcon
-          classname="w-8 h-8 cursor-pointer hover:scale-125"
+          classname="w-8 h-8 cursor-pointer hover:scale-125 transition-all duration-200"
           theme="light"
         />
       </a>
